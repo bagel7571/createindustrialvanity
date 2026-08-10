@@ -1,6 +1,7 @@
 package net.oxiditsu.createindustrialvanity;
 
 import net.oxiditsu.createindustrialvanity.block.ModBlocks;
+import net.oxiditsu.createindustrialvanity.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -40,7 +41,7 @@ public class CreateIndustrialVanity {
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
     // Create a Deferred Register to hold Items which will all be registered under the "createindustrialvanity" namespace
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
+    // public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
     // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "createindustrialvanity" namespace
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
@@ -53,7 +54,7 @@ public class CreateIndustrialVanity {
         // Register the Deferred Register to the mod event bus so blocks get registered
         ModBlocks.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
-        ITEMS.register(modEventBus);
+        ModItems.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
 
