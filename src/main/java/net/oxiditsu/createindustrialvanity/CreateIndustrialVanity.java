@@ -39,8 +39,6 @@ public class CreateIndustrialVanity {
     public static final String MODID = "createindustrialvanity";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
-    // Create a Deferred Register to hold Blocks which will all be registered under the "createindustrialvanity" namespace
-    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
     // Create a Deferred Register to hold Items which will all be registered under the "createindustrialvanity" namespace
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
     // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "createindustrialvanity" namespace
@@ -53,7 +51,7 @@ public class CreateIndustrialVanity {
         modEventBus.addListener(this::commonSetup);
 
         // Register the Deferred Register to the mod event bus so blocks get registered
-        BLOCKS.register(modEventBus);
+        ModBlocks.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
         ITEMS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
@@ -86,7 +84,7 @@ public class CreateIndustrialVanity {
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(ModBlocks.STEEL_BLOCK::toStack)
             .displayItems((parameters, output) -> {
-                output.accept(ModBlocks.STEEL_BLOCK.get());// Add the example item to the tab. For your own tabs, this method is preferred over the event
+                output.accept(ModBlocks.STEEL_BLOCK.toStack());
             }).build());
 
     private void commonSetup(FMLCommonSetupEvent event) {
