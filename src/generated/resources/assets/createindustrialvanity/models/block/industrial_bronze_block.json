@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "createindustrialvanity:block/industrial_bronze_block"
+  }
+}

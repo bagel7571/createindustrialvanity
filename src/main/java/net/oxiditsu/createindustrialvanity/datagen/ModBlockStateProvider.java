@@ -15,6 +15,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.STEEL_BLOCK);
+        blockWithItem(ModBlocks.INDUSTRIAL_BRONZE_BLOCK);
+        blockWithItem(ModBlocks.VERDANT_INDUSTRIAL_BRONZE_BLOCK);
+        blockWithItem(ModBlocks.SOLAR_STEEL_BLOCK);
+        blockWithItem(ModBlocks.QUARTZ_IRON_BLOCK);
 
     }
 

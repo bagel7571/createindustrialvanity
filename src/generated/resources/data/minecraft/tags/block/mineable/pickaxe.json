@@ -1,5 +1,9 @@
 {
   "values": [
-    "createindustrialvanity:steel_block"
+    "createindustrialvanity:steel_block",
+    "createindustrialvanity:industrial_bronze_block",
+    "createindustrialvanity:verdant_industrial_bronze_block",
+    "createindustrialvanity:solar_steel_block",
+    "createindustrialvanity:quartz_iron_block"
   ]
 }

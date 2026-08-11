@@ -17,6 +17,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.STEEL_BLOCK.get());
+        dropSelf(ModBlocks.INDUSTRIAL_BRONZE_BLOCK.get());
+        dropSelf(ModBlocks.VERDANT_INDUSTRIAL_BRONZE_BLOCK.get());
+        dropSelf(ModBlocks.SOLAR_STEEL_BLOCK.get());
+        dropSelf(ModBlocks.QUARTZ_IRON_BLOCK.get());
     }
 
     @Override

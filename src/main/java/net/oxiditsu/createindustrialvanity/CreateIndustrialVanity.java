@@ -86,6 +86,10 @@ public class CreateIndustrialVanity {
             .icon(ModBlocks.STEEL_BLOCK::toStack)
             .displayItems((parameters, output) -> {
                 output.accept(ModBlocks.STEEL_BLOCK.toStack());
+                output.accept(ModBlocks.INDUSTRIAL_BRONZE_BLOCK.toStack());
+                output.accept(ModBlocks.VERDANT_INDUSTRIAL_BRONZE_BLOCK.toStack());
+                output.accept(ModBlocks.SOLAR_STEEL_BLOCK.toStack());
+                output.accept(ModBlocks.QUARTZ_IRON_BLOCK.toStack());
             }).build());
 
     private void commonSetup(FMLCommonSetupEvent event) {

@@ -20,10 +20,18 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.STEEL_BLOCK.get());
+                .add(ModBlocks.STEEL_BLOCK.get())
+                .add(ModBlocks.INDUSTRIAL_BRONZE_BLOCK.get())
+                .add(ModBlocks.VERDANT_INDUSTRIAL_BRONZE_BLOCK.get())
+                .add(ModBlocks.SOLAR_STEEL_BLOCK.get())
+                .add(ModBlocks.QUARTZ_IRON_BLOCK.get());
 
         tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag)
-                .add(ModBlocks.STEEL_BLOCK.get());
+                .add(ModBlocks.STEEL_BLOCK.get())
+                .add(ModBlocks.INDUSTRIAL_BRONZE_BLOCK.get())
+                .add(ModBlocks.VERDANT_INDUSTRIAL_BRONZE_BLOCK.get())
+                .add(ModBlocks.SOLAR_STEEL_BLOCK.get())
+                .add(ModBlocks.QUARTZ_IRON_BLOCK.get());
 
     }
 }
