@@ -5,5 +5,8 @@
   "block.createindustrialvanity.industrial_bronze_block": "Block of Industrial Bronze",
   "block.createindustrialvanity.verdant_industrial_bronze_block": "Block of Oxidized Bronze",
   "block.createindustrialvanity.solar_steel_block": "Block of Solar Steel",
-  "block.createindustrialvanity.quartz_iron_block": "Block of Quartz Iron"
+  "block.createindustrialvanity.quartz_iron_block": "Block of Quartz Iron",
+  "block.createindustrialvanity.industrial_iron_tiles": "Industrial Iron Tiles",
+  "block.createindustrialvanity.weathered_iron_tiles": "Weathered Iron Tiles",
+  "block.createindustrialvanity.iron_tiles": "Iron Tiles"
 }

@@ -24,14 +24,20 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.INDUSTRIAL_BRONZE_BLOCK.get())
                 .add(ModBlocks.VERDANT_INDUSTRIAL_BRONZE_BLOCK.get())
                 .add(ModBlocks.SOLAR_STEEL_BLOCK.get())
-                .add(ModBlocks.QUARTZ_IRON_BLOCK.get());
+                .add(ModBlocks.QUARTZ_IRON_BLOCK.get())
+                .add(ModBlocks.INDUSTRIAL_IRON_TILES.get())
+                .add(ModBlocks.WEATHERED_IRON_TILES.get())
+                .add(ModBlocks.IRON_TILES.get());
 
         tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag)
                 .add(ModBlocks.STEEL_BLOCK.get())
                 .add(ModBlocks.INDUSTRIAL_BRONZE_BLOCK.get())
                 .add(ModBlocks.VERDANT_INDUSTRIAL_BRONZE_BLOCK.get())
                 .add(ModBlocks.SOLAR_STEEL_BLOCK.get())
-                .add(ModBlocks.QUARTZ_IRON_BLOCK.get());
+                .add(ModBlocks.QUARTZ_IRON_BLOCK.get())
+                .add(ModBlocks.INDUSTRIAL_IRON_TILES.get())
+                .add(ModBlocks.WEATHERED_IRON_TILES.get())
+                .add(ModBlocks.IRON_TILES.get());
 
     }
 }

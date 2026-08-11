@@ -4,6 +4,9 @@
     "createindustrialvanity:industrial_bronze_block",
     "createindustrialvanity:verdant_industrial_bronze_block",
     "createindustrialvanity:solar_steel_block",
-    "createindustrialvanity:quartz_iron_block"
+    "createindustrialvanity:quartz_iron_block",
+    "createindustrialvanity:industrial_iron_tiles",
+    "createindustrialvanity:weathered_iron_tiles",
+    "createindustrialvanity:iron_tiles"
   ]
 }

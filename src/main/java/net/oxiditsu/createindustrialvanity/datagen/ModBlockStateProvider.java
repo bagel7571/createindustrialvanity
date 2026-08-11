@@ -19,6 +19,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.VERDANT_INDUSTRIAL_BRONZE_BLOCK);
         blockWithItem(ModBlocks.SOLAR_STEEL_BLOCK);
         blockWithItem(ModBlocks.QUARTZ_IRON_BLOCK);
+        blockWithItem(ModBlocks.INDUSTRIAL_IRON_TILES);
+        blockWithItem(ModBlocks.WEATHERED_IRON_TILES);
+        blockWithItem(ModBlocks.IRON_TILES);
 
     }
 

@@ -33,6 +33,15 @@ public class ModBlocks {
     public static final DeferredBlock<Block> QUARTZ_IRON_BLOCK = registerBlock("quartz_iron_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3.0F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.STONE)));
+    public static final DeferredBlock<Block> INDUSTRIAL_IRON_TILES = registerBlock("industrial_iron_tiles",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.STONE)));
+    public static final DeferredBlock<Block> WEATHERED_IRON_TILES = registerBlock("weathered_iron_tiles",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.STONE)));
+    public static final DeferredBlock<Block> IRON_TILES = registerBlock("iron_tiles",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(5.0F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.METAL).mapColor(MapColor.STONE)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
