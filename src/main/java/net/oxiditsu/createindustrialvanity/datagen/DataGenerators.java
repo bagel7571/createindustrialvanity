@@ -11,6 +11,8 @@ import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.oxiditsu.createindustrialvanity.CreateIndustrialVanity;
+import net.oxiditsu.createindustrialvanity.datagen.recipe.CrushingRecipeProvider;
+import net.oxiditsu.createindustrialvanity.datagen.recipe.MixingRecipeProvider;
 
 import java.util.Collections;
 import java.util.List;
@@ -22,6 +24,7 @@ public class DataGenerators {
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
+        PackOutput output = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
@@ -35,6 +38,15 @@ public class DataGenerators {
 
         // generator.addProvider(event.includeServer(), new ModDataMapProvider(packOutput, lookupProvider));
 
+        generator.addProvider(
+                event.includeServer(),
+                new CrushingRecipeProvider(output, lookupProvider, CreateIndustrialVanity.MODID)
+        );
+
+        generator.addProvider(
+                event.includeServer(),
+                new MixingRecipeProvider(output, lookupProvider, CreateIndustrialVanity.MODID)
+        );
 
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));

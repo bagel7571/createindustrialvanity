@@ -8,5 +8,8 @@
   "block.createindustrialvanity.quartz_iron_block": "Block of Quartz Iron",
   "block.createindustrialvanity.industrial_iron_tiles": "Industrial Iron Tiles",
   "block.createindustrialvanity.weathered_iron_tiles": "Weathered Iron Tiles",
-  "block.createindustrialvanity.iron_tiles": "Iron Tiles"
+  "block.createindustrialvanity.iron_tiles": "Iron Tiles",
+
+  "item.createindustrialvanity.steel_ingot": "Steel Ingot",
+  "item.createindustrialvanity.coal_dust": "Coal Dust"
 }

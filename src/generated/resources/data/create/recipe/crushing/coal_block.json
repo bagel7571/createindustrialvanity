@@ -1,0 +1,20 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:coal_block"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "count": 9,
+      "id": "createindustrialvanity:coal_dust"
+    },
+    {
+      "chance": 0.25,
+      "count": 3,
+      "id": "createindustrialvanity:coal_dust"
+    }
+  ]
+}
